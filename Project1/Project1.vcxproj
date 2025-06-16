@@ -130,13 +130,13 @@
     <ClCompile Include="card.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\card3.png" />
     <Image Include="Assets\card2.png" />
     <Image Include="Assets\card1.png" />
     <Image Include="Assets\card4.png" />
-    <Image Include="Capture.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="ARIAL.TTF" />
@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="card.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

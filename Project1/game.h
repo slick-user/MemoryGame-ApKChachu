@@ -3,24 +3,30 @@
 #include <iostream>
 #include "card.h"
 
+using namespace std;
+
 class Game {
 	private:
-		std::vector<Card> cards;
-
-		sf::RenderWindow window;
+		sf::RenderWindow& window;
 
 		sf::Font font;
 		sf::Text text;
 
+		vector<Card> cards;
+
 		bool checkingForMatch = false; // Flag to check if we are currently checking for a match
-		std::vector<Card*> flippedCards;
+		vector<Card*> flippedCards;
 		sf::Clock matchClock;
 
 		int scoreP1;
 		int scoreP2;
 
+		int PTurn; // If 1 then it is P1 Turn Else on 2 P2 Turn
+
+		bool gameOver = false;
+
 	public:
-		Game();
+		Game(sf::RenderWindow& window);
 		
 		int run();
 		void update();
