@@ -3,6 +3,7 @@
 
 #include "game.h"
 #include "menu.h"
+#include "timedMode.h"
 
 int main()
 {
@@ -18,6 +19,21 @@ int main()
         else if (mode == 2) {
             Game classic(window);
             mode = classic.run();
+        }
+        else if (mode == 31) {
+            TimedMode timed(window, 60);
+            mode = timed.run();
+        }
+        else if (mode == 32) {
+            TimedMode timed(window, 90);
+            mode = timed.run();
+        }
+        else if (mode == 33) {
+            TimedMode timed(window, 120);
+            mode = timed.run();
+        }
+        else if (mode == 4) {
+            // Implementation of AI Mode
         }
 
         if (mode == 0) window.close();

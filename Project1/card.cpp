@@ -34,5 +34,5 @@ void Card::draw(sf::RenderWindow& window) {
 }
 
 void Card::flip() {
-    isShown = !isShown;;
+    isShown = !isShown;
 }

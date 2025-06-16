@@ -10,7 +10,6 @@ class Game {
 		sf::RenderWindow& window;
 
 		sf::Font font;
-		sf::Text text;
 
 		vector<Card> cards;
 

@@ -131,6 +131,7 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
+    <ClCompile Include="timedMode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\card3.png" />
@@ -145,6 +146,7 @@
     <ClInclude Include="card.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="timedMode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

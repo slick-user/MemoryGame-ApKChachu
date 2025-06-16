@@ -14,6 +14,8 @@ class Card {
 		bool isShown = false;
 		bool matched = false;
 
+		void loadTexture(const char* path);
+
 	public:
 		Card(const char* path = "Assets/card1.png", float x = 100.0f, float y = 300.0f, int id = 0);
 
@@ -27,7 +29,6 @@ class Card {
 		bool getIsShown() const { return isShown; }
 		sf::Sprite& getSprite() { return sprite; }
 
-		void loadTexture(const char* path);
 		void draw(sf::RenderWindow& window);
 
 		bool isHovered(const sf::Vector2f& mousePos) const;

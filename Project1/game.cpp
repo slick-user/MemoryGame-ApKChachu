@@ -85,8 +85,7 @@ int Game::run() {
 
         // Draw the sprite
         for (int i = 0; i < cards.size(); i++) {
-            if (!cards[i].getMatched()) 
-                cards[i].draw(window);
+            cards[i].draw(window);
         }
 
         // Update the window
@@ -137,7 +136,7 @@ int Game::run() {
         }
     }
 
-    return EXIT_SUCCESS;
+    return 1;
 }
 
 void Game::update() {
