@@ -1,5 +1,6 @@
-﻿  main.cpp
-  menu.cpp
+﻿  game.cpp
+  main.cpp
+  timedMode.cpp
   Generating Code...
   Project1.vcxproj -> D:\Programming\C++ Scripts\sfmlGame\Project1\x64\Debug\Project1.exe
   'pwsh.exe' is not recognized as an internal or external command,

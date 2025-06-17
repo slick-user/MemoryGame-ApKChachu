@@ -1,7 +1,10 @@
 #pragma once
 
 #include <iostream>
+#include <random>
+#include <ctime>
 #include "card.h"
+
 
 using namespace std;
 

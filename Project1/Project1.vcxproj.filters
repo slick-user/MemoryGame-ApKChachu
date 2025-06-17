@@ -47,6 +47,21 @@
     <Image Include="Assets\card4.png">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="Assets\card0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\card5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\card6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\card7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\card8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Font Include="ARIAL.TTF" />

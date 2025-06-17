@@ -20,7 +20,7 @@ void Card::loadTexture(const char* path) {
         std::cout << "Error loading asset"; // Error loading file
     }
 
-    if (!backTexture.loadFromFile("Assets/card1.png")) {
+    if (!backTexture.loadFromFile("Assets/card0.png")) {
 		std::cout << "Error loading asset"; // Error loading file
 	}
 

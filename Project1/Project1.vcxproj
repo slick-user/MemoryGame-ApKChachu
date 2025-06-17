@@ -134,10 +134,15 @@
     <ClCompile Include="timedMode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\card0.png" />
     <Image Include="Assets\card3.png" />
     <Image Include="Assets\card2.png" />
     <Image Include="Assets\card1.png" />
     <Image Include="Assets\card4.png" />
+    <Image Include="Assets\card5.png" />
+    <Image Include="Assets\card6.png" />
+    <Image Include="Assets\card7.png" />
+    <Image Include="Assets\card8.png" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="ARIAL.TTF" />

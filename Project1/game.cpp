@@ -2,14 +2,35 @@
 
 Game::Game(sf::RenderWindow& window) : window(window) {
 
-    // Create the main window
-    cards.emplace_back("Assets/card4.png", 100.0f, 300.0f, 1);
-    cards.emplace_back("Assets/card2.png", 200.0f, 300.0f, 2);
-    cards.emplace_back("Assets/card3.png", 300.0f, 300.0f, 3);
-    cards.emplace_back("Assets/card4.png", 100.0f, 400.0f, 1);
-    cards.emplace_back("Assets/card2.png", 200.0f, 400.0f, 2);
-    cards.emplace_back("Assets/card3.png", 300.0f, 400.0f, 3);
+    srand(static_cast<unsigned>(time(0))); // Seed the RNG
 
+    int ids[16];
+    int index = 0;
+
+    // Create pairs of 1 to 8 (each twice)
+    for (int i = 1; i <= 8; ++i) {
+        ids[index++] = i;
+        ids[index++] = i;
+    }
+
+    for (int i = 15; i > 0; --i) {
+        int j = rand() % (i + 1);
+        std::swap(ids[i], ids[j]);
+    }
+    
+    for (int i = 0; i < 16; ++i) {
+        int row = i / 4;
+        int col = i % 4;
+
+        float x = 100.0f + col * 100.0f;
+        float y = 200.0f + row * 100.0f;
+
+        int id = ids[i];
+
+        string texturePath = "Assets/card" + std::to_string(id) + ".png";
+        cards.emplace_back(texturePath.c_str(), x, y, id);
+    }
+    
     // Create a graphical text to display
     font.loadFromFile("Arial.TTF");
 

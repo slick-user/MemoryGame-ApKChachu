@@ -1,6 +1,8 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <random>
+#include <ctime>
 
 #include "card.h"
 
